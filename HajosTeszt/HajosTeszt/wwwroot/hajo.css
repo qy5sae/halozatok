@@ -1,0 +1,105 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 10px;
+}
+
+body {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    background-color: blanchedalmond;
+    font-family: 'Arial';
+    text-align: justify;
+}
+
+#kulso {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+#kerdes_szoveg {
+    font-size: 20px;
+    background-color: burlywood;
+    margin: 0px;
+    padding: 10px;
+}
+
+#kozepso {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#valaszok {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#kep {
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#vezerlo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kerdes {
+    border-radius: 10px;
+    padding: 2px;
+    border: 1px solid chocolate;
+}
+
+.gomb {
+    padding: 20px;
+    width: 80px;
+    background-color: burlywood;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.kattinthato:hover {
+    background-color: chocolate;
+    color: black;
+}
+
+.jo {
+    border: 1px solid green;
+    background-color: rgba(30, 220, 21, 0.4);
+}
+
+.rossz {
+    border: 1px solid red;
+    background-color: rgba(217, 30, 24, 0.4);
+}
+
+@media screen and (max-width:800px) {
+    
+    #kozepso {
+        display:flex;
+        flex-direction:column;
+    }
+    #valaszok{
+        flex-grow:1;
+        flex-shrink:1;
+    }
+    #kep {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+        #kep img {
+            width:100%;
+            height:auto;
+        }
+
+
+}
